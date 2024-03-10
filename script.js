@@ -4,10 +4,14 @@ let segundosPassados = 0;
 let minutos = 0;
 let segundos = 0;
 
+function formataTempo(tempo) {
+  return String(tempo).padStart(2, '0');
+}
+
 function atualizaTela() {
   minutos = Math.floor(segundosPassados / 60);
   segundos = segundosPassados % 60;
-  relogio.innerHTML = `${minutos}:${segundos}`;
+  relogio.innerHTML = `${formataTempo(minutos)}:${formataTempo(segundos)}`;
 }
 
 function atualizaSegundosPassados(){
