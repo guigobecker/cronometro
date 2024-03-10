@@ -22,3 +22,13 @@ function atualizaSegundosPassados(){
 function iniciaIntervalo() {
   intervalo = setInterval(atualizaSegundosPassados, 1000);
 }
+
+function paraIntervalo() {
+  clearInterval(intervalo);
+}
+
+function zeraIntervalo() {
+  paraIntervalo();
+  segundosPassados = 0;
+  atualizaTela();
+}
