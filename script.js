@@ -20,6 +20,7 @@ function atualizaSegundosPassados(){
 }
 
 function iniciaIntervalo() {
+  if (intervalo) paraIntervalo();
   intervalo = setInterval(atualizaSegundosPassados, 1000);
 }
 
