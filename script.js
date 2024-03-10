@@ -3,6 +3,7 @@ let intervalo = null;
 let segundosPassados = 0;
 let minutos = 0;
 let segundos = 0;
+let parado = true;
 
 function formataTempo(tempo) {
   return String(tempo).padStart(2, '0');
@@ -20,12 +21,15 @@ function atualizaSegundosPassados(){
 }
 
 function iniciaIntervalo() {
-  if (intervalo) paraIntervalo();
-  intervalo = setInterval(atualizaSegundosPassados, 1000);
+  if (parado) {
+    intervalo = setInterval(atualizaSegundosPassados, 1000);
+    parado = false;
+  }
 }
 
 function paraIntervalo() {
   clearInterval(intervalo);
+  parado = true;
 }
 
 function zeraIntervalo() {
