@@ -1,7 +1,5 @@
 # Cronômetro
 
-Cronômetro em HTML e Javascript.
-
 ### Tecnologias Utilizadas
 <li>JavaScript</li>
 <li>CSS</li>
