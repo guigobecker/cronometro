@@ -1,4 +1,5 @@
 # Cronômetro
+Marque intervalos de tempo.
 
 ### Tecnologias Utilizadas
 <li>JavaScript</li>
